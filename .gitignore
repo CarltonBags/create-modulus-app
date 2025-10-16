@@ -5,4 +5,9 @@ dist/
 .env
 .env.local
 test-app/
+test*/
+
+# Internal documentation (not for end users)
+PUBLISHING.md
+QUICKSTART.md
 
