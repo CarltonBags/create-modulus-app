@@ -10,11 +10,6 @@ Build decentralized applications on Modulus Testnet with your choice of Vite or 
 npx create-modulus-app my-app
 ```
 
-Or with npm 6+:
-
-```bash
-npm init modulus-app my-app
-```
 
 The CLI will guide you through:
 1. **Project name** - Name your dApp
@@ -31,16 +26,17 @@ That's it! Your app is ready with everything configured! 🎉
 - ✅ **Tailwind CSS**: Beautiful, responsive styling
 - ✅ **Modulus Testnet**: Pre-configured custom chain
 - ✅ **Environment Variables**: dotenv setup with examples
-- ✅ **Beautiful UI**: Gradient design with "Buidl on the Revolution" branding
 
 ## Features
 
 Your bootstrapped app includes:
-- 🌑 Black themed website
-- 🔗 Wallet connect button
+- 🔴 Dark red gradient theme
+- 🔗 One-click wallet connection
+- 💰 Real-time CULT balance display
 - 👛 Connected address display
-- ⚡ Modern, responsive UI
-- 🎨 Gradient styling
+- ⚡ Glassmorphism UI design
+- 🎨 Revolutionary gradient styling
+- 📱 Fully responsive
 
 ## Modulus Testnet Details
 
@@ -50,7 +46,7 @@ The SDK comes pre-configured with:
 - **Chain ID:** 6666
 - **RPC URL:** https://rpc.moduluszk.io
 - **Block Explorer:** https://eye.moduluszk.io
-- **Symbol:** MOD
+- **Symbol:** CULT
 
 ## Development
 
@@ -74,124 +70,6 @@ Templates include `.env.example` as documentation showing:
 - Example format
 
 **You don't need to manually copy it!** The CLI automatically creates your `.env` file with your Project ID during setup.
-
-## Publishing to npm
-
-If you want to publish this package or customize it:
-
-### First Time Setup
-
-1. **Create an npm account**: Visit [npmjs.com](https://www.npmjs.com/) and sign up
-
-2. **Login to npm via CLI**:
-   ```bash
-   npm login
-   ```
-
-3. **Update package.json**: Change the package name if needed (must be unique on npm)
-
-### Publishing Steps
-
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-2. **Test the CLI locally**:
-   ```bash
-   npm link
-   create-modulus-app test-app
-   ```
-
-3. **Update version** (if republishing):
-   ```bash
-   npm version patch  # for bug fixes
-   npm version minor  # for new features
-   npm version major  # for breaking changes
-   ```
-
-4. **Publish to npm**:
-   ```bash
-   npm publish
-   ```
-
-   If the package name is not taken, it will be published. If it's scoped, use:
-   ```bash
-   npm publish --access public
-   ```
-
-### Publishing Checklist
-
-- [ ] All dependencies are in the correct package.json files
-- [ ] CLI tool has executable permissions (`chmod +x cli/index.js`)
-- [ ] Templates are tested and working
-- [ ] README is comprehensive
-- [ ] .gitignore includes node_modules and test directories
-- [ ] Version number is updated
-- [ ] npm login is successful
-
-### Testing Before Publishing
-
-Always test your package locally before publishing:
-
-```bash
-# Link the package locally
-npm link
-
-# Create a test app
-create-modulus-app test-app
-
-# Test the app
-cd test-app
-npm install
-npm run dev
-
-# Clean up
-cd ..
-rm -rf test-app
-npm unlink create-modulus-app
-```
-
-## Project Structure
-
-```
-create-modulus-app/
-├── cli/
-│   └── index.js           # CLI entry point
-├── templates/
-│   ├── vite/             # Vite + React template
-│   │   ├── src/
-│   │   │   ├── App.tsx
-│   │   │   ├── main.tsx
-│   │   │   └── config/
-│   │   │       └── wagmi.ts
-│   │   ├── package.json
-│   │   ├── tsconfig.json
-│   │   ├── vite.config.ts
-│   │   └── tailwind.config.js
-│   └── nextjs/           # Next.js template
-│       ├── app/
-│       │   ├── page.tsx
-│       │   ├── layout.tsx
-│       │   └── providers.tsx
-│       ├── config/
-│       │   └── wagmi.ts
-│       ├── package.json
-│       ├── tsconfig.json
-│       ├── next.config.js
-│       └── tailwind.config.ts
-├── package.json
-└── README.md
-```
-
-## Customization
-
-You can customize the templates by editing files in the `templates/` directory:
-
-- **Styling**: Edit Tailwind config or CSS files
-- **Chain Config**: Modify `config/wagmi.ts` in each template
-- **UI Components**: Update `App.tsx` (Vite) or `app/page.tsx` (Next.js)
-- **Dependencies**: Add to respective `package.json` files
 
 ## Troubleshooting
 
@@ -225,15 +103,17 @@ Contributions are welcome! Feel free to:
 
 ## License
 
-MIT © Modulus
+MIT © Carlton Bags
 
 ---
 
-## Support
+## Resources
 
-- **Website**: https://moduluszk.io
+- **Modulus Website**: https://moduluszk.io
+- **Documentation**: https://docs.moduluszk.io
 - **Block Explorer**: https://eye.moduluszk.io
-- **Documentation**: [Add your docs URL]
+- **Faucet**: https://faucet.moduluszk.io
+- **GitHub**: https://github.com/CarltonBags/create-modulus-app
 
 ---
 
