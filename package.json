@@ -1,0 +1,44 @@
+{
+  "name": "create-modulus-app",
+  "version": "1.0.0",
+  "description": "Create Modulus dApps with one command",
+  "type": "module",
+  "bin": {
+    "create-modulus-app": "./cli/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CarltonBags/create-modulus-app.git"
+  },
+  "bugs": {
+    "url": "https://github.com/CarltonBags/create-modulus-app/issues"
+  },
+  "homepage": "https://github.com/CarltonBags/create-modulus-app#readme",
+  "scripts": {
+    "test": "node cli/index.js test-app"
+  },
+  "keywords": [
+    "modulus",
+    "blockchain",
+    "evm",
+    "web3",
+    "dapp",
+    "starter",
+    "template",
+    "cli",
+    "create-app"
+  ],
+  "author": "Modulus",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.1.0",
+    "inquirer": "^9.2.12",
+    "ora": "^8.0.1",
+    "fs-extra": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
+
